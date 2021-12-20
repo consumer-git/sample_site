@@ -4,6 +4,24 @@
 <head>
 <title> single page website </title>
 <style>
+    body{
+        margin: 0;
+        font-family: 'Libre Baskerville', serif;
+    }
+    #mast{
+        width: 100%;
+        background-color: aquamarine;
+        height: 55px;
+        margin-top: 20px;
+        margin-right: 20px;
+        position: fixed;
+    }
+    #nav{
+        float: left;
+        
+        margin-top: 10px;
+       
+    }
     .container{
         max-width: 1040px;
         border: 1px solid black;
@@ -33,13 +51,64 @@
         color: white;
        
     }
-    
+    #nav li a:hover{
+        color:brown
+    }
+    .clear{
+        clear: both
+    }
+    .wrap{
+        background-color: rgb((red), green, blue);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 40px auto;
+    }    
+
+
+    #section1{
+        background:url('http://via.placeholder.com/1200x800/EE33CC/0033333?text=Section 1');
+        background-size: cover;
+        padding: 100px;
+    }
+    #section2{
+        background-color: #fff;
+    }
+    #section3{
+        background:url('http://via.placeholder.com/1200x800/EE33CCFFF/0033333?text=Section 3');
+        background-size: cover;
+        
+    }    
+    #section4{
+        background-color: whitesmoke;
+        
+    }    
+    #footer{
+        background-color: #333;
+        color: white;
+    }
+    .col1{
+        width: 66%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .col2{
+        width: 33%;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-family: fantasy;
+    }
+    footer{
+        width: 100%;
+        display: inline-block;
+        background-color: wheat;
+    }       
+  
 </style>
 
 </head>
 <body>
     <div class="container">
-    <header>
+    <header id="mast">
         <div>
             <nav id="nav">
 
@@ -47,7 +116,7 @@
                     <li><a href="#section1" class="active"></a> section1</a></li>
                     <li><a href="#section2" class="active"></a> section2</a></li>    
                     <li><a href="#section3" class="active"></a> section3</a></li>
-                 
+                    <li><a href="#section4" class="active"></a> section4</a></li>
                 </ul>
 
             </nav>
@@ -57,31 +126,67 @@
         </div>
 
 
-    </header>
-        <section id="section1" class="section">
-              <div wrap="wrap"></div>  
+                    </header>
+                        <section id="section1" class="section">
+                            <div wrap="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 
-        </section>
-        <section id="section1" class="section">
-            <div wrap="wrap"></div>  
+                                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                                
+                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum</p></div>  
 
-      </section>
-      <section id="section2" class="section">
-        <div wrap="wrap"></div>  
+                        </section>
+                        <section id="section2" class="section">
+                            <div wrap="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
-        </section>
-        <section id="section2" class="section">
-        <div wrap="wrap"></div>  
+                                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                                
+                                <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p></div>  
 
-        </section>
+                    </section>
+                    <section id="section3" class="section">
+                        <div wrap="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                            
+                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                            
+                            <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p></div>  
+
+                        </section>
+                        <section id="section4" class="section">
+                        <div wrap="wrap"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+
+                            <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p></div>  
+
+                        </section>
             <footer>
-            </div>
+                <div>
+                   <div class="col1">(c)copyright my website </div>     
+
+                   <div class="col2">
+                       <ul>
+                       <li>link1</li>
+                       <li>link2</li>
+                       <li>link3</li>
+                        </ul> 
+                    </div>   
+                </div>
+            
 
 
             </footer>
-
+            </div>
             <script>
-
+                    var section=document.querySelectorAll('section'); //creating a scrollby effect with js grabbing elements with the DOM
+                    var sections={}; 
+                    section.forEach(function(e){
+                        console.log(e.id, e.offsetTop)
+                        sections[e.id]=e.offsetTop;
+                    })
+                    // windows.onscroll= function(){
+                    //     var scrollPos=document.documentElement.scrollTop || document.body.scrollTop; 
+                    //     console.log('scroll')
+                    // }
             </script>
 
 </body>
